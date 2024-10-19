@@ -1,6 +1,6 @@
 seaborn
 numpy
 pandas
-sklearn
+scikit-learn
 altair
 matplotlib
