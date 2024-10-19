@@ -1,6 +1,6 @@
-matplotlib.pyplot
 seaborn
 numpy
 pandas
 sklearn
 altair
+matplotlib
