@@ -30,11 +30,10 @@ df_scaled_lowmass = df_scaled_lowmass[df_scaled_lowmass["n"] <= 30]
 
 st.title("Nuclear Charge Radius Exploration")
 st.write('''
-    Here we explore the relationship between nuclear charge radius and other properties 
-    of the nucleus. The nuclear charge radius is a measure of the proton distribution in the 
+    This project explores the connection between nuclear charge radius and nuclear 
+    mass, decay mode, binding energy, and more properties of the nucleus. The nuclear charge radius is a measure of the proton distribution in the 
     nucleus, which is a useful measure to test nuclear physics theory and the focus of my thesis 
-    work. This project explores the connection between nuclear charge radius and nuclear 
-    mass, decay mode, binding energy, and more.
+    work. 
     
     Data was compiled from the international atomic energy agency databases for charge radii, nuclear mass,
     and half lives. This process is explained in detail in the github. The relationship between the charge radius 
@@ -44,7 +43,7 @@ tab1, tab2 = st.tabs(["Global Distribution", "Shell Closure"])
 
 with tab1:
     st.write('''
-        The nuclear charge radius (R) has a general trend that can be explained by the number of 
+        The nuclear charge radius (R) has a general trend that is typically modeled by the number of 
         protons and neutrons in the nucleus, which is referred to as the mass number (A).
     ''')
     st.latex("R = 1.2 A^{1/3}")
@@ -140,7 +139,7 @@ with tab1:
         ''')
         
     st.write('''
-        The above plots show that the standard global trend strongly correlates with the charge radius values. 
+        The above plots show that the standard global trend of mass number strongly correlates with the charge radius values. 
         Interestingly, trends are also observed between the decay mode, mass excess, and binding energy per nucleon. This 
         connection will be explored in future work to see if improved predictions can be generated as compared to the standard method.
     ''')
@@ -149,7 +148,7 @@ with tab2:
              The local evolution of the nuclear charge radius deviates strongly from the general model and  is an active area of research. 
              It is of particular interest to benchmark 
              modern nuclear theories. One region of recent research is nuclear shell closures, which are configurations corresponding to 
-             exceptionally stable nuclei analogous to noble gas valence shell closures in chemistry. Here we explroe the N=20 and N=28 neutron shell 
+             exceptionally stable nuclei analogous to noble gas valence shell closures in chemistry. Here we explore the N=20 and N=28 neutron shell 
              closure region where recent experiments in the field have been focused.
              ''')
     st.header("Neutron Number")
